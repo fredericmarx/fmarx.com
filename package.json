@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "build-metalsmith.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
+    "fetch": "^1.0.1",
     "handlebars": "^4.0.5",
+    "medium-parser": "0.0.3",
     "metalsmith": "^2.1.0",
     "metalsmith-autoprefixer": "^1.1.0",
     "metalsmith-browser-sync": "^1.1.1",
@@ -22,12 +23,17 @@
     "webpack": "^1.12.15"
   },
   "scripts": {
-    "start": "node ./build.js"
+    "start": "node ./build.js",
+    "fetch": "node ./fetch.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "metallumConfig": {
     "theme": "amplified"
+  },
+  "devDependencies": {
+    "jsdom": "^8.3.1",
+    "to-markdown": "^2.0.1"
   }
 }
