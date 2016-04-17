@@ -15,7 +15,8 @@ var browserSync = require('metalsmith-browser-sync')
 var metalsmith = Metalsmith(__dirname)
   .use(inject({
     paths: [
-      'amplified/styles'
+      'amplified/styles',
+      'amplified/scripts'
     ]
   }))
   .use(rootPath())
