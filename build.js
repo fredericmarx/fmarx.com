@@ -1,5 +1,6 @@
 var config = require('./package.json').metallumConfig
 var Metalsmith = require('metalsmith')
+var browserSync = require('metalsmith-browser-sync')
 var cleanUrls = require('metalsmith-clean-urls')
 var collections = require('metalsmith-collections')
 var drafts = require('metalsmith-drafts')
@@ -10,7 +11,6 @@ var registerHelpers = require('metalsmith-register-helpers')
 var rootPath = require('metalsmith-rootpath')
 var sass = require('metalsmith-sass')
 var watch = require('metalsmith-watch')
-var browserSync = require('metalsmith-browser-sync')
 
 var metalsmith = Metalsmith(__dirname)
   .use(inject({
@@ -41,12 +41,16 @@ var metalsmith = Metalsmith(__dirname)
   .use(cleanUrls())
   .use(watch({
     paths: {
-      'amplified/**/*': '**/*'
-    },
-    livereload: true
+      'amplified/**/*': '**/*',
+      'src/**/*': '**/*'
+    }
   }))
   .use(browserSync({
-    server: 'build'
+    server: 'build',
+    files: [
+      'amplified/**/*',
+      'src/**/*'
+    ]
   }))
   .build(function (err) {
     if (err) throw err
