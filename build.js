@@ -6,6 +6,7 @@ var drafts = require('metalsmith-drafts')
 var inject = require('metalsmith-inject').default
 var layouts = require('metalsmith-layouts')
 var markdown = require('metalsmith-markdown')
+var registerHelpers = require('metalsmith-register-helpers')
 var rootPath = require('metalsmith-rootpath')
 var sass = require('metalsmith-sass')
 var watch = require('metalsmith-watch')
@@ -17,17 +18,20 @@ var metalsmith = Metalsmith(__dirname)
       'amplified/styles'
     ]
   }))
+  .use(rootPath())
   .use(sass())
   .use(drafts())
-  .use(collections({
-    articles: '*.md'
-  }))
   .use(markdown({
     smartypants: true,
     gfm: true,
     tables: true
   }))
-  .use(rootPath())
+  .use(collections({
+    notes: 'notes/*'
+  }))
+  .use(registerHelpers({
+    directory: './' + config.theme + '/helpers'
+  }))
   .use(layouts({
     engine: 'handlebars',
     directory: './' + config.theme + '/layouts',

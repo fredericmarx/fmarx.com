@@ -1,6 +1,7 @@
 ---
 layout: default.html
 title: Webmentions
+webmentions: true
 ---
 # Webmentions
 
