@@ -20,7 +20,13 @@ var metalsmith = Metalsmith(__dirname)
     ]
   }))
   .use(rootPath())
-  .use(sass())
+  .use(sass({
+    sourceMap: true,
+    sourceMapContents: true,
+    includePaths: [
+      'amplified/styles'
+    ]
+  }))
   .use(drafts())
   .use(markdown({
     smartypants: true,
