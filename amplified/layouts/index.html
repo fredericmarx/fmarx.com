@@ -1,13 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <base href="/">
   <link href="main.css" rel="stylesheet"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Frederic Marx — Web Designer, Front-End Developer</title>
 </head>
 <body>
   {{> header }}
-  {{{contents}}}
+  <main role="main" class="main-content prose">
+    <div class="container container--narrow">
+      {{{contents}}}
+    </div>
+  </main>
   {{> footer }}
 </body>
 </html>

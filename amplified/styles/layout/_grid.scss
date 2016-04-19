@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  padding-left: $space-1;
+  padding-right: $space-1;
+
+  &--narrow {
+    max-width: 42rem;
+  }
+}
+
+.inline-block {
+  display: inline-block;
+}

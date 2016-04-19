@@ -1,0 +1,15 @@
+.flag {
+  display: flex;
+
+  &--center {
+    align-items: center;
+  }
+
+  &__body {
+    flex: 1;
+  }
+
+  &__media {
+    padding: $space-1;
+  }
+}

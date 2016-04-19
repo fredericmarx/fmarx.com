@@ -1,21 +1,27 @@
 <footer class="main-footer">
-  <section>
-    <h2>Notes</h2>
-    {{#each notes}}
-      <li><a href="{{cleanUrl this.path}}">{{this.title}}</a></li>
-    {{/each}}
-  </section>
-  <section>
-    <h2>Let's stay in touch</h2>
-    <p><a rel="me" href="https://twitter.com/fredericmarx">Twitter</a></p>
-    <p><a rel="me" href="https://medium.com/@fredericmarx">Medium</a></p>
-    <p><a rel="me" href="https://github.com/fredericmarx">Github</a></p>
-    <p><a rel="me" href="https://codepen.com/fredericmarx">Codepen</a></p>
-  </section>
-  <section>
-    <h2>Contact</h2>
-    <p><a rel="me" href="mailto:hi@fmarx.com">hi@fmarx.com</a></p>
-  </section>
+  <div class="container container--narrow">
+    <section>
+      <h2>Notes</h2>
+      <ul class="list-reset">
+      {{#each notes}}
+        <li><a href="{{cleanUrl this.path}}">{{this.title}}</a></li>
+      {{/each}}
+      </ul>
+    </section>
+    <section>
+      <h2>Stay in touch</h2>
+      <ul class="list-reset">
+        <li><a rel="me" href="https://twitter.com/fredericmarx">Twitter</a></li>
+        <li><a rel="me" href="https://medium.com/@fredericmarx">Medium</a></li>
+        <li><a rel="me" href="https://github.com/fredericmarx">Github</a></li>
+        <li><a rel="me" href="https://codepen.com/fredericmarx">Codepen</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Contact</h2>
+      <p><a rel="me" href="mailto:hi@fmarx.com">hi@fmarx.com</a></p>
+    </section>
+  </container>
 </footer>
 <script>
 if ('serviceWorker' in navigator) {

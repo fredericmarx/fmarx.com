@@ -1,8 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <base href="/">
   <link href="main.css" rel="stylesheet"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{title}} | Frederic Marx — Web Designer, Front-End Developer</title>
   {{#if webmentions}}
     <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
@@ -10,10 +12,14 @@
 </head>
 <body>
   {{> header }}
-  {{{contents}}}
-  {{#if webmentions}}
-    {{> webmentions}}
-  {{/if}}
+  <main role="main" class="main-content prose">
+    <div class="container container--narrow">
+      {{{contents}}}
+      {{#if webmentions}}
+        {{> webmentions}}
+      {{/if}}
+    </div>
+  </main>
   {{> footer }}
 </body>
 </html>

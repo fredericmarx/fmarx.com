@@ -1,0 +1,36 @@
+$color-blue: #3BA9E0;
+$color-red: #E7515C;
+
+$color-gray-15: darken(white, 15%);
+
+$separator-color: $color-gray-15;
+
+$color-link: $color-blue;
+
+$color-brand: $color-red;
+
+$base-font-size: 18px;
+$base-line-height: 1.5em;
+
+$monospace: menlo, monospace;
+$heading-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Fira Sans", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;;
+
+$space-1: (1/2 * $base-line-height);
+$space-2: (2 * $space-1);
+$space-3: (3 * $space-1);
+$space-4: (4 * $space-1);
+
+$h1: 2em;
+$h2: 1.5em;
+$h3: 1.25em;
+$h4: 1em;
+$h5: .875em;
+$h6: .75em;
+
+$line-height-1: 1;
+$line-height-2: 1.125;
+$line-height-3: 1.25;
+$line-height-4: 1.5;
+$letter-spacing: 1;
+$caps-letter-spacing: .2em;
+$bold-font-weight: bold;
