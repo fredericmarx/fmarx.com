@@ -3,7 +3,8 @@
   const cacheVersion = '2.0.3'; // gets replaced with package.version
   const alwaysCache = [
     '/',
-    '/main.css'
+    '/main.css',
+    '/frederic-marx.jpg'
   ];
 
   // Store core files in a cache (including a page to display when offline)

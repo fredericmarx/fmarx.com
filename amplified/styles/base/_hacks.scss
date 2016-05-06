@@ -1,0 +1,11 @@
+.hide-small {
+  @media (max-width: (630px - 1)) {
+    display: none;
+  }
+}
+
+.hide-medium {
+  @media (max-width: (750px - 1)) {
+    display: none;
+  }
+}

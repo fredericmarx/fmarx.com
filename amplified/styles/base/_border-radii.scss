@@ -1,0 +1,9 @@
+.circle {
+  border-radius: 50%;
+}
+
+.circle-correction {
+  @media (min-width: 630px) {
+    margin-left: -10px;
+  }
+}

@@ -1,13 +1,29 @@
 body {
-  font-size: $base-font-size;
+  font-size: 18px;
   line-height: $base-line-height;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Fira Sans", "Oxygen", "Ubuntu", "Cantarell", "Droid Sans", "Helvetica Neue", sans-serif;
+  color: $color-text;
+
+  @media (min-width: 390px) {
+    font-size: 21px;
+  }
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+}
+
+.link-fancy {
+  border-bottom: 3px solid $color-lime;
 }
 
 .prose {
-  font-size: $h3;
   line-height: $base-line-height;
-  font-family: "Iowan Old Style", Constantia, Georgia, serif;
+
+  * {
+    margin-top: 0;
+  }
 
   h1,
   h2,
@@ -15,7 +31,7 @@ body {
   h4,
   h5,
   h6 {
-    font-family: $heading-font-family;
+    // font-family: $heading-font-family;
   }
 
   h1 {
@@ -29,15 +45,40 @@ body {
   h3 {
     font-size: $h3;
   }
-}
 
-a {
-  color: $color-link;
-  text-decoration: none;
+  a {
+    @extend .link-fancy;
+  }
 }
 
 .list-reset {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.h1 {
+  font-size: $h1;
+}
+
+.h2 {
+  font-size: $h2;
+}
+
+.h3 {
+  font-size: $h3;
+}
+
+.h4 {
+  font-size: $h4;
+}
+
+.h5 {
+  font-size: $h4;
+}
+
+hr {
+  border-top: 1px solid $separator-color;
+  margin-top: $space-2;
+  margin-bottom: $space-2;
 }
