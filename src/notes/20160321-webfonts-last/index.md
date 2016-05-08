@@ -3,6 +3,7 @@ layout: note.html
 title: Webfonts Last
 webmentions: true
 containsTweets: true
+containsVimeo: true
 ---
 
 _This is sort of a response to Adam “_[@mrmrs_](https://twitter.com/mrmrs_)_” Morse’s “_[_Webfonts_](http://mrmrs.io/writing/2016/03/17/webfonts/)_.” It’s not a rebuttal by any means, but rather a collection of my own thoughts that at least tangentially relate to his article._
@@ -35,7 +36,7 @@ Before we had webfonts, building websites with the limited typographic resources
 
 <figure>
 
-![](https://cdn-images-1.medium.com/max/800/1*kDfHsVL9VDyLFIK3qltKjA.png)
+![](images/jon-tan.png)
 
 <figcaption class="imageCaption">[Jon Tan](http://jontangerine.com/)’s website in 2010 was a paragon of typographic style without webfonts.</figcaption>
 
