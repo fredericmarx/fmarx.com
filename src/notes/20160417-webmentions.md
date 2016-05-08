@@ -1,5 +1,5 @@
 ---
-layout: default.html
+layout: note.html
 title: Webmentions
 webmentions: true
 ---

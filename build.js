@@ -1,8 +1,8 @@
-var config = require('./package.json').metallumConfig
 var Metalsmith = require('metalsmith')
 var browserSync = require('metalsmith-browser-sync')
 var cleanUrls = require('metalsmith-clean-urls')
 var collections = require('metalsmith-collections')
+var dateInFilename = require('metalsmith-date-in-filename')
 var drafts = require('metalsmith-drafts')
 var inject = require('metalsmith-inject').default
 var layouts = require('metalsmith-layouts')
@@ -10,13 +10,14 @@ var markdown = require('metalsmith-markdown')
 var registerHelpers = require('metalsmith-register-helpers')
 var rootPath = require('metalsmith-rootpath')
 var sass = require('metalsmith-sass')
+var stripDateFromFilename = require('./metalsmith-strip-date-from-filename')
 var watch = require('metalsmith-watch')
 
 var metalsmith = Metalsmith(__dirname)
   .use(inject({
     paths: [
-      'amplified/styles',
-      'amplified/scripts'
+      'theme/styles',
+      'theme/scripts'
     ]
   }))
   .use(rootPath())
@@ -24,9 +25,11 @@ var metalsmith = Metalsmith(__dirname)
     sourceMap: true,
     sourceMapContents: true,
     includePaths: [
-      'amplified/styles'
+      'theme/styles'
     ]
   }))
+  .use(dateInFilename({override: true}))
+  .use(stripDateFromFilename())
   .use(drafts())
   .use(markdown({
     smartypants: true,
@@ -37,24 +40,24 @@ var metalsmith = Metalsmith(__dirname)
     notes: 'notes/*'
   }))
   .use(registerHelpers({
-    directory: './' + config.theme + '/helpers'
+    directory: './theme/helpers'
   }))
   .use(layouts({
     engine: 'handlebars',
-    directory: './' + config.theme + '/layouts',
-    partials: './' + config.theme + '/partials'
+    directory: './theme/layouts',
+    partials: './theme/partials'
   }))
   .use(cleanUrls())
   .use(watch({
     paths: {
-      'amplified/**/*': '**/*',
+      'theme/**/*': '**/*',
       'src/**/*': '**/*'
     }
   }))
   .use(browserSync({
     server: 'build',
     files: [
-      'amplified/**/*',
+      'theme/**/*',
       'src/**/*'
     ]
   }))
