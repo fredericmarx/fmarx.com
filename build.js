@@ -1,16 +1,17 @@
 var Metalsmith = require('metalsmith')
 var browserSync = require('metalsmith-browser-sync')
-var cleanUrls = require('metalsmith-clean-urls')
 var collections = require('metalsmith-collections')
+var dateFormatter = require('metalsmith-date-formatter')
 var dateInFilename = require('metalsmith-date-in-filename')
 var drafts = require('metalsmith-drafts')
 var inject = require('metalsmith-inject').default
 var layouts = require('metalsmith-layouts')
 var markdown = require('metalsmith-markdown')
-var registerHelpers = require('metalsmith-register-helpers')
+var paths = require('metalsmith-paths')
 var rootPath = require('metalsmith-rootpath')
 var sass = require('metalsmith-sass')
 var stripDateFromFilename = require('./metalsmith-strip-date-from-filename')
+var stripIndexHtmlFromPath = require('./metalsmith-strip-index-html-from-path')
 var watch = require('metalsmith-watch')
 
 var metalsmith = Metalsmith(__dirname)
@@ -30,24 +31,27 @@ var metalsmith = Metalsmith(__dirname)
   }))
   .use(dateInFilename({override: true}))
   .use(stripDateFromFilename())
+  .use(dateFormatter({dates: [
+    {
+      key: 'date',
+      format: 'MMMM D YYYY'
+    }
+  ]}))
   .use(drafts())
   .use(markdown({
     smartypants: true,
     gfm: true,
     tables: true
   }))
+  .use(stripIndexHtmlFromPath())
   .use(collections({
-    notes: 'notes/*'
-  }))
-  .use(registerHelpers({
-    directory: './theme/helpers'
+    notes: 'notes/**/*'
   }))
   .use(layouts({
     engine: 'handlebars',
     directory: './theme/layouts',
     partials: './theme/partials'
   }))
-  .use(cleanUrls())
   .use(watch({
     paths: {
       'theme/**/*': '**/*',

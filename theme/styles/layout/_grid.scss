@@ -38,6 +38,10 @@ $max-width: ($text-ideal-measure * $text-margin-left) + ($text-ideal-measure) + 
   }
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
