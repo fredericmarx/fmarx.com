@@ -3,9 +3,7 @@ module.exports = function (options) {
     setImmediate(done)
     Object.keys(files).forEach(function (file) {
       if (file.match(/\index.html$/)) {
-        console.log(file)
         files[file]._path = file.replace(/\index.html$/, '')
-        console.log(files[file])
       }
     })
     done()
