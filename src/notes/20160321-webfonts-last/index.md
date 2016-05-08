@@ -2,6 +2,7 @@
 layout: note.html
 title: Webfonts Last
 webmentions: true
+containsTweets: true
 ---
 
 _This is sort of a response to Adam “_[@mrmrs_](https://twitter.com/mrmrs_)_” Morse’s “_[_Webfonts_](http://mrmrs.io/writing/2016/03/17/webfonts/)_.” It’s not a rebuttal by any means, but rather a collection of my own thoughts that at least tangentially relate to his article._
@@ -16,11 +17,10 @@ Still, the value of this feature at this point seems rather academic.
 
 It’s just hard to imagine a user going “Wow, the whole page suddenly changed for no apparent reason. What an awesome experience!”
 
-<figure name="700e" id="700e" class="graf--figure graf--iframe graf-after--p">
-
-<div class="iframeContainer"><iframe width="700" height="250" src="/media/43cac2a180dcc43127ce27b3e4320c1a?maxWidth=700" data-media-id="43cac2a180dcc43127ce27b3e4320c1a" frameborder="0"></iframe></div>
-
-</figure>
+<div>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">.<a href="https://twitter.com/mrmrs_">@mrmrs_</a> FOIT and FOUT are so offensive I don&#39;t understand how any designer would be okay with using web fonts</p>&mdash; Brent Jackson (@jxnblk) <a href="https://twitter.com/jxnblk/status/710456292436025345">March 17, 2016</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 When I first read [Adam’s article](http://mrmrs.io/writing/2016/03/17/webfonts/), intriguing as it was, [it didn’t sit well with me](https://twitter.com/fredericmarx/status/710480904255315968). Of course it didn’t. It never feels good when someone tells you how something you love isn’t good for you. Especially when you know deep down that they have a point.
 
@@ -43,11 +43,9 @@ Before we had webfonts, building websites with the limited typographic resources
 
 Since then, [system fonts have only gotten better](http://practicaltypography.com/system-fonts.html). Apple has continued adding beloved classics like [Avenir](https://en.wikipedia.org/wiki/Avenir_%28typeface%29), [Microsoft has come up with some quality original designs](http://typographica.org/on-typography/microsofts-cleartype-font-collection-a-fair-and-balanced-review/) and the Android system families [Roboto](https://en.wikipedia.org/wiki/Roboto) and [Droid](https://en.wikipedia.org/wiki/Droid_fonts) are among the most popular webfonts themselves.
 
-<figure>
-
-<div class="iframeContainer"><iframe width="700" height="250" src="/media/51681be0cf28e3796d8feed753e49346?maxWidth=700" data-media-id="51681be0cf28e3796d8feed753e49346" frameborder="0"></iframe></div>
-
-</figure>
+<div>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The best &quot;typography tip for UI&quot; I have for you is use system fonts.</p>&mdash; Brent Jackson (@jxnblk) <a href="https://twitter.com/jxnblk/status/704755241263173633">March 1, 2016</a></blockquote>
+</div>
 
 General UI elements and menus are probably the most obvious place to start using system fonts. They are what the system designers thought was best, so we might as well take their word for it instead of reinventing the wheel.
 
@@ -85,7 +83,7 @@ Another class of products that relies heavily on digital typography are native a
 
 <figure>
 
-<div class="iframeContainer"><iframe data-width="1920" data-height="1080" width="700" height="394" src="/media/e53765cee1dd7ea209e3502299d436a9?maxWidth=700" data-media-id="e53765cee1dd7ea209e3502299d436a9" frameborder="0"></iframe></div>
+https://vimeo.com/157259335
 
 <figcaption class="imageCaption">The [Viki Wikipedia reader app](http://viki-app.com/) shines through its use of custom typography.</figcaption>
 

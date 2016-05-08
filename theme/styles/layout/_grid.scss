@@ -10,31 +10,35 @@ $text-ideal-measure: 35rem;
 
 $max-width: ($text-ideal-measure * $text-margin-left) + ($text-ideal-measure) + ($text-ideal-measure * $text-margin-right);
 
+%main-column {
+  padding-left: $space-1;
+  padding-right: $space-1;
+
+  @media (min-width: 630px) {
+    padding-left: calc(#{$space-1} + 20%);
+  }
+
+  @media (min-width: 750px) {
+    padding-right: calc(#{$space-1} + 20%);
+  }
+
+  @media (min-width: 1010px) {
+    padding-left: calc(#{$space-1} + 10%);
+    padding-right: calc(#{$space-1} + 45%);
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: calc(#{$space-1} + 20%);
+    padding-right: calc(#{$space-1} + 40%);
+  }
+}
+
 .container {
   margin: 0 auto;
   max-width: calc(1200px + (2 * #{$space-1}));
 
   & > * {
-    padding-left: $space-1;
-    padding-right: $space-1;
-
-    @media (min-width: 630px) {
-      padding-left: calc(#{$space-1} + 20%);
-    }
-
-    @media (min-width: 750px) {
-      padding-right: calc(#{$space-1} + 20%);
-    }
-
-    @media (min-width: 1010px) {
-      padding-left: calc(#{$space-1} + 10%);
-      padding-right: calc(#{$space-1} + 45%);
-    }
-
-    @media (min-width: 1200px) {
-      padding-left: calc(#{$space-1} + 20%);
-      padding-right: calc(#{$space-1} + 40%);
-    }
+    @extend %main-column;
   }
 }
 
