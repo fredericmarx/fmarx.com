@@ -38,15 +38,19 @@ var metalsmith = Metalsmith(__dirname)
     }
   ]}))
   .use(drafts())
+  .use(collections({
+    notes: {
+      pattern: 'notes/**/*!(index.md)',
+      sortBy: 'date',
+      reverse: true
+    }
+  }))
   .use(markdown({
     smartypants: true,
     gfm: true,
     tables: true
   }))
   .use(stripIndexHtmlFromPath())
-  .use(collections({
-    notes: 'notes/**/*'
-  }))
   .use(layouts({
     engine: 'handlebars',
     directory: './theme/layouts',
