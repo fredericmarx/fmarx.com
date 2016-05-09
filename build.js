@@ -7,7 +7,7 @@ var drafts = require('metalsmith-drafts')
 var inject = require('metalsmith-inject').default
 var layouts = require('metalsmith-layouts')
 var markdown = require('metalsmith-markdown')
-var paths = require('metalsmith-paths')
+var readTime = require('./metalsmith-read-time')
 var rootPath = require('metalsmith-rootpath')
 var sass = require('metalsmith-sass')
 var stripDateFromFilename = require('./metalsmith-strip-date-from-filename')
@@ -40,9 +40,8 @@ var metalsmith = Metalsmith(__dirname)
   .use(drafts())
   .use(collections({
     notes: {
-      pattern: 'notes/**/*',
       sortBy: 'date',
-      reverse: true
+      reverse: false
     }
   }))
   .use(markdown({
@@ -50,6 +49,7 @@ var metalsmith = Metalsmith(__dirname)
     gfm: true,
     tables: true
   }))
+  .use(readTime())
   .use(stripIndexHtmlFromPath())
   .use(layouts({
     engine: 'handlebars',

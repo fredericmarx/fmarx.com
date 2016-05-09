@@ -16,7 +16,11 @@
       {{{contents}}}
       <ul class="list-reset">
       {{#each notes}}
-        <li class="mb1"><a href="{{rootPath}}{{this._path}}">{{this.title}}</a></li>
+        <li class="mb1">
+          <h2><a href="{{rootPath}}{{this._path}}">{{this.title}}</a></h2>
+          <p class="h5">Published {{this.date}}<br>
+          {{this.readTime}} minute read</p>
+        </li>
       {{/each}}
       </ul>
     </div>

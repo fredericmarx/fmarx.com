@@ -2,6 +2,7 @@
 layout: note.html
 title: Webfonts Last
 webmentions: true
+collection: notes
 containsTweets: true
 containsVimeo: true
 ---
