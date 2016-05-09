@@ -40,7 +40,7 @@ var metalsmith = Metalsmith(__dirname)
   .use(drafts())
   .use(collections({
     notes: {
-      pattern: 'notes/**/*!(index.md)',
+      pattern: 'notes/**/*',
       sortBy: 'date',
       reverse: true
     }

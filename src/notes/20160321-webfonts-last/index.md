@@ -94,7 +94,7 @@ Of course, hiding all content behind a tiresome installation routine is a terrib
 
 <figure>
 
-![](https://cdn-images-1.medium.com/max/800/1*tmYFWHzYiMFySPiF7gwesg.png)
+![](images/web-vs-app.png)
 
 </figure>
 
