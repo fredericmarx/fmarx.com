@@ -5,6 +5,8 @@ var dateFormatter = require('metalsmith-date-formatter')
 var dateInFilename = require('metalsmith-date-in-filename')
 var drafts = require('metalsmith-drafts')
 var inject = require('metalsmith-inject').default
+var inlineMainCss = require('./metalsmith-inline-main-css')
+var imagemin = require('metalsmith-imagemin')
 var layouts = require('metalsmith-layouts')
 var markdown = require('metalsmith-markdown')
 var readTime = require('./metalsmith-read-time')
@@ -55,6 +57,11 @@ var metalsmith = Metalsmith(__dirname)
     engine: 'handlebars',
     directory: './theme/layouts',
     partials: './theme/partials'
+  }))
+  .use(inlineMainCss())
+  .use(imagemin({
+    optimizationLevel: 3,
+    svgoPlugins: [{ removeViewBox: false }]
   }))
   .use(watch({
     paths: {
