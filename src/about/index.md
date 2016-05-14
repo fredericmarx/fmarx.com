@@ -1,6 +1,6 @@
 ---
 layout: default.html
-title: Home
+title: About
 ---
 
 # About Me
