@@ -1,13 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <link href="{{rootPath}}main.css" rel="stylesheet"></link>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{> head }}
   <title>{{title}} | Frederic Marx — Web Designer, Front-End Developer</title>
-  {{#if webmentions}}
-    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" />
-  {{/if}}
 </head>
 <body>
   {{> header }}
