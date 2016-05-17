@@ -5,7 +5,7 @@ title: About
 
 # About Me
 
-My name is Frederic Marx. I plan, design, and build useful, focused, and fast websites with personality.
+My name is Frederic Marx. I plan, design, and build useful, focused, and fast responsive apps and&nbsp;websites.
 
 Small and medium clients hire me to create new websites and apps, update existing ones, or help them establish and maintain a consistent visual brand.
 
