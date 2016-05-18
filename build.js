@@ -19,8 +19,7 @@ var watch = require('metalsmith-watch')
 var metalsmith = Metalsmith(__dirname)
   .use(inject({
     paths: [
-      'theme/styles',
-      'theme/scripts'
+      'theme/styles'
     ]
   }))
   .use(rootPath())
@@ -59,10 +58,10 @@ var metalsmith = Metalsmith(__dirname)
     partials: './theme/partials'
   }))
   .use(inlineMainCss())
-  .use(imagemin({
-    optimizationLevel: 3,
-    svgoPlugins: [{ removeViewBox: false }]
-  }))
+  // .use(imagemin({
+  //   optimizationLevel: 3,
+  //   svgoPlugins: [{ removeViewBox: false }]
+  // }))
   .use(watch({
     paths: {
       'theme/**/*': '**/*',

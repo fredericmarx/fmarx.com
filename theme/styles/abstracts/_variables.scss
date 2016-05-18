@@ -13,6 +13,8 @@ $color-brand: $color-purple;
 
 $color-headline: black;
 
+$color-text-secondary: darken(white, 50%);
+
 $space-1: 15px;
 $space-2: 30px;
 $space-3: 60px;
@@ -27,6 +29,8 @@ $h6: .75rem;
 
 $base-font-size: 20px;
 $base-line-height: $space-2;
+
+$system-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Fira Sans", "Oxygen", "Cantarell", "Droid Sans", "Helvetica Neue", "Verdana", sans-serif;
 
 $monospace: menlo, monospace;
 

@@ -1,8 +1,13 @@
-body {
+html {
   font-size: 18px;
   line-height: $base-line-height;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Fira Sans", "Oxygen", "Cantarell", "Droid Sans", "Helvetica Neue", "Verdana", sans-serif;
+  font-family: $system-font-family;
   color: $color-text;
+}
+
+.nitti-grotesk-loaded {
+  font-family: "Nitti Grotesk", $system-font-family;
+  font-size: 22px;
 }
 
 a {
@@ -23,17 +28,23 @@ a {
 
   h1 {
     font-size: $h1;
+    margin-top: $space-2;
+    margin-bottom: $space-3;
   }
 
   h2 {
     font-size: $h2;
+    margin-top: $space-3;
+    margin-bottom: $space-2
   }
 
   h3 {
     font-size: $h3;
+    margin-top: $space-3;
+    margin-bottom: $space-2
   }
 
-  a {
+  a:not([class*="btn"]) {
     @extend .link-fancy;
   }
 
@@ -87,7 +98,11 @@ h6 {
 }
 
 .h5 {
-  font-size: $h4;
+  font-size: $h5;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 hr {

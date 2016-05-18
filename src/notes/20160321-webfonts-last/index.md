@@ -7,7 +7,7 @@ containsTweets: true
 containsVimeo: true
 ---
 
-_This is sort of a response to Adam “_[@mrmrs_](https://twitter.com/mrmrs_)_” Morse’s “_[_Webfonts_](http://mrmrs.io/writing/2016/03/17/webfonts/)_.” It’s not a rebuttal by any means, but rather a collection of my own thoughts that at least tangentially relate to his article._
+*This is sort of a response to Adam “[@mrmrs_](https://twitter.com/mrmrs_)” Morse’s “[Webfonts](http://mrmrs.io/writing/2016/03/17/webfonts/).” It’s not a rebuttal by any means, but rather a collection of my own thoughts that at least tangentially relate to his article.*
 
 Webfonts, in theory, are great. Using them responsibly though, without negative impact on the user experience, is an engineering nightmare at best, impossible at worst.
 

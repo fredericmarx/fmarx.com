@@ -9,8 +9,13 @@
   border: 1px solid transparent;
   white-space: nowrap;
   color: white;
-  background: $color-link;
+  background: black;
   padding-left: 7px;
   padding-right: 7px;
   border-radius: 2px;
+}
+
+.btn-primary {
+  @extend .btn;
+  background: $color-link;
 }

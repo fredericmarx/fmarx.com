@@ -27,7 +27,7 @@ $max-width: ($text-ideal-measure * $text-margin-left) + ($text-ideal-measure) + 
     padding-right: calc(#{$space-1} + 45%);
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1260px) {
     padding-left: calc(#{$space-1} + 20%);
     padding-right: calc(#{$space-1} + 40%);
   }
@@ -35,7 +35,7 @@ $max-width: ($text-ideal-measure * $text-margin-left) + ($text-ideal-measure) + 
 
 .container {
   margin: 0 auto;
-  max-width: calc(1200px + (2 * #{$space-1}));
+  max-width: calc(1260px + (2 * #{$space-1}));
 
   & > * {
     @extend %main-column;

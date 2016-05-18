@@ -1,6 +1,5 @@
 {
-  "name": "metallum",
-  "version": "1.0.0",
+  "name": "fmarx.com",
   "description": "",
   "main": "build-metalsmith.js",
   "dependencies": {
@@ -28,7 +27,5 @@
     "fetch": "node ./fetch.js",
     "start": "node ./build.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC"
 }
