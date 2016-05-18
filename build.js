@@ -19,7 +19,8 @@ var watch = require('metalsmith-watch')
 var metalsmith = Metalsmith(__dirname)
   .use(inject({
     paths: [
-      'theme/styles'
+      'theme/styles',
+      'theme/scripts'
     ]
   }))
   .use(rootPath())
