@@ -5,7 +5,7 @@ title: About
 
 # About Me
 
-My name is Frederic Marx. I plan, design, and build useful, focused, and fast responsive apps and&nbsp;websites.
+My name is Frederic Marx. I&nbsp;plan, design, and build useful, focused, and fast responsive apps and&nbsp;websites.
 
 Small and medium clients hire me to create new websites and apps, update existing ones, or help them establish and maintain a consistent visual brand.
 
@@ -15,4 +15,4 @@ I believe in the web as a platform of social change. Working on the web is a pri
 
 I want every website to be great. If you want your website to be great, too, I can help you with that. Just ask!
 
-<a href="mailto://hi@fmarx.com" class="btn">Write me a nice e-mail</a>
+[Write me a nice e-mail](mailto://hi@fmarx.com)

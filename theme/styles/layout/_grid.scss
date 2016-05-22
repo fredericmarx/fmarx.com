@@ -26,11 +26,6 @@ $max-width: ($text-ideal-measure * $text-margin-left) + ($text-ideal-measure) + 
     padding-left: calc(#{$space-1} + 10%);
     padding-right: calc(#{$space-1} + 45%);
   }
-
-  @media (min-width: 1260px) {
-    padding-left: calc(#{$space-1} + 20%);
-    padding-right: calc(#{$space-1} + 40%);
-  }
 }
 
 .container {

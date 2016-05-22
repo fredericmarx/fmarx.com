@@ -14,11 +14,13 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
 (function(){
   var nittiGroteskNormal = new FontFaceObserver('Nitti Grotesk');
 
-  var nittiGroteskBold = new FontFaceObserver('Nitti Grotesk', {
+  var tundraRegular = new FontFaceObserver('FF Tundra');
+
+  var tundraBold = new FontFaceObserver('FF Tundra', {
     weight: 'bold'
   });
 
-  var nittiGroteskItalic = new FontFaceObserver('Nitti Grotesk', {
+  var tundraItalic = new FontFaceObserver('FF Tundra', {
     style: 'italic'
   });
 
@@ -28,8 +30,12 @@ a;q()});y(p,J(c,'"'+c.family+'",monospace'))})})};window.FontFaceObserver=B;wind
     });
   }
 
-  Promise.race([timer(100), Promise.all([nittiGroteskNormal.load(), nittiGroteskBold.load(), nittiGroteskItalic.load()])]).then(function () {
+  Promise.race([timer(100), nittiGroteskNormal.load()]).then(function () {
     document.documentElement.className += " nitti-grotesk-loaded";
+  })
+
+  Promise.race([timer(100), Promise.all([tundraRegular.load(), tundraBold.load(), tundraItalic.load()])]).then(function () {
+    document.documentElement.className += " ff-tundra-loaded";
   })
 })()
 </script>

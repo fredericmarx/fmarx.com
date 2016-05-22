@@ -1,13 +1,18 @@
 html {
-  font-size: 18px;
+  font-size: 21px;
   line-height: $base-line-height;
-  font-family: $system-font-family;
   color: $color-text;
+  font-variant-ligatures: common-ligatures discretionary-ligatures;
+  font-variant-numeric: oldstyle-nums;
+  background: $color-main-background;
+}
+
+body {
+  @include sans();
 }
 
 .nitti-grotesk-loaded {
-  font-family: "Nitti Grotesk", $system-font-family;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 a {
@@ -16,7 +21,13 @@ a {
 }
 
 .link-fancy {
-  border-bottom: 3px solid $color-lime;
+  border-bottom: 2px solid rgba($color-lime, .5);
+
+  &:hover,
+  &:focus {
+    background-image: linear-gradient(transparent 95% , $color-lime 95%);
+    border-bottom-color: $color-lime;
+  }
 }
 
 .prose {
@@ -57,6 +68,7 @@ a {
 
   figcaption {
     padding-top: $space-1;
+    @include sans();
   }
 }
 
@@ -78,7 +90,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  @include sans();
 }
 
 .h1 {
@@ -109,4 +121,12 @@ hr {
   border-top: 1px solid $separator-color;
   margin-top: $space-2;
   margin-bottom: $space-2;
+}
+
+.serif {
+  @include serif();
+}
+
+.sans {
+  @include sans();
 }

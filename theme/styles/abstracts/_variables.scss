@@ -3,17 +3,13 @@ $color-purple: #6F5CCC;
 $color-lime: #7fffd4;
 $color-text: black;
 
-$color-gray-15: darken(white, 15%);
-
-$separator-color: $color-gray-15;
-
+$separator-color: darken(white, 20%);
 $color-link: $color-purple;
-
 $color-brand: $color-purple;
-
 $color-headline: black;
-
 $color-text-secondary: darken(white, 50%);
+$color-main-background: darken(white, 2%);
+$color-footer-background: darken(white, 5%);
 
 $space-1: 15px;
 $space-2: 30px;
@@ -30,7 +26,26 @@ $h6: .75rem;
 $base-font-size: 20px;
 $base-line-height: $space-2;
 
-$system-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Fira Sans", "Oxygen", "Cantarell", "Droid Sans", "Helvetica Neue", "Verdana", sans-serif;
+$sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Fira Sans", "Oxygen", "Cantarell", "Droid Sans", "Helvetica Neue", "Verdana", sans-serif;
+
+@mixin sans() {
+  font-family: $sans;
+
+  .nitti-grotesk-loaded & {
+    font-family: "Nitti Grotesk", $sans;
+  }
+}
+
+$serif: Charter, Georgia, serif;
+
+@mixin serif() {
+  font-family: $serif;
+  font-size: 20px;
+
+  .ff-tundra-loaded & {
+    font-family: "FF Tundra", $serif;
+  }
+}
 
 $monospace: menlo, monospace;
 

@@ -5,15 +5,21 @@
 }
 
 @font-face {
-  font-family: "Nitti Grotesk";
-  font-style: italic;
-  src: url("https://fmarx.com/fonts/nittigrotesk-normalitalic-v20.woff2") format("woff2"),
-       url("https://fmarx.com/fonts/nittigrotesk-normalitalic-v20.woff") format("woff");
+  font-family: "FF Tundra";
+  src: url("https://fmarx.com/fonts/tundra-regular.woff2") format("woff2"),
+       url("https://fmarx.com/fonts/tundra-regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Nitti Grotesk";
+  font-family: "FF Tundra";
+  font-style: italic;
+  src: url("https://fmarx.com/fonts/tundra-regularitalic.woff2") format("woff2"),
+       url("https://fmarx.com/fonts/tundra-regularitalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "FF Tundra";
   font-weight: bold;
-  src: url("https://fmarx.com/fonts/nittigrotesk-bold-v20.woff2") format("woff2"),
-       url("https://fmarx.com/fonts/nittigrotesk-bold-v20.woff") format("woff");
+  src: url("https://fmarx.com/fonts/tundra-bold.woff2") format("woff2"),
+       url("https://fmarx.com/fonts/tundra-bold.woff") format("woff");
 }

@@ -1,3 +1,9 @@
+.hide-tiny {
+  @media (max-width: (350px - 1)) {
+    display: none;
+  }
+}
+
 .hide-small {
   @media (max-width: (630px - 1)) {
     display: none;
