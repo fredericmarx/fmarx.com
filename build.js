@@ -41,9 +41,11 @@ var metalsmith = Metalsmith(__dirname)
   ]}))
   .use(drafts())
   .use(collections({
+    nav: {
+      sortBy: 'navPriority'
+    },
     notes: {
-      sortBy: 'date',
-      reverse: false
+      sortBy: 'date'
     }
   }))
   .use(markdown({

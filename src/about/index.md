@@ -1,6 +1,8 @@
 ---
 layout: default.html
 title: About
+collection: nav
+navPriority: 2
 ---
 
 # About Me
