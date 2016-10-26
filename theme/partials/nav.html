@@ -1,0 +1,14 @@
+<ul role="navigation" class="main-navigation__links list-reset">
+  {{#each nav}}
+    <li class="inline-block">
+      {{#if this.current}}
+      <span class="inline-block pl1 {{this.navClass}} current">{{this.title}}</span>
+      {{else}}
+      <a class="inline-block pl1 {{this.navClass}}" href="/{{this._path}}">{{this.title}}</a>
+      {{/if}}
+    </li>
+  {{/each}}
+  <li class="inline-block">
+    <a class="inline-block btn-primary" href="mailto:hi@fmarx.com">Work<span class="hide-tiny"> with me</span></a>
+  </li>
+</ul>
