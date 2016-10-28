@@ -1,0 +1,9 @@
+{
+  "name": "fmarx.com",
+  "scripts": {
+    "start": "list ./ -c 31536000"
+  },
+  "dependencies": {
+    "list": "latest"
+  }
+}
