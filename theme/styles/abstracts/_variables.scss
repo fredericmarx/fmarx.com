@@ -23,28 +23,19 @@ $h4: 1rem;
 $h5: .875rem;
 $h6: .75rem;
 
-$base-font-size: 20px;
+$base-font-size: 1.25rem;
 $base-line-height: 1.5;
 
 $sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Fira Sans", "Oxygen", "Cantarell", "Droid Sans", "Helvetica Neue", "Verdana", sans-serif;
 
 @mixin sans() {
   font-family: $sans;
-
-  .nitti-grotesk-loaded & {
-    font-family: "Nitti Grotesk", $sans;
-  }
 }
 
 $serif: Charter, Georgia, serif;
 
 @mixin serif() {
   font-family: $serif;
-  font-size: 20px;
-
-  .ff-tundra-loaded & {
-    font-family: "FF Tundra", $serif;
-  }
 }
 
 $monospace: menlo, monospace;
