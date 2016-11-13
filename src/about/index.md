@@ -17,4 +17,4 @@ I believe in the web as a platform of social change. Working on the web is a pri
 
 I want every website to be great. If you want your website to be great, too, I can help you with that. Just ask!
 
-[Write me a nice e-mail](mailto://hi@fmarx.com)
+[Write me a nice e-mail](mailto://marx.frederic@gmail.com)
