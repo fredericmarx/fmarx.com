@@ -26,7 +26,7 @@
   "scripts": {
     "fetch": "node ./fetch.js",
     "build": "node ./build.js",
-		"deploy": "node ./build.js && cp now-package.json build/package.json && now build"
+    "deploy": "node ./build.js && cp now-package.json build/package.json && now build"
   },
   "license": "ISC"
 }
