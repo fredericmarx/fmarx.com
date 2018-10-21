@@ -1,9 +1,0 @@
-{
-  "name": "fmarx.com",
-  "scripts": {
-    "start": "serve ./ -c 31536000"
-  },
-  "dependencies": {
-    "serve": "latest"
-  }
-}
