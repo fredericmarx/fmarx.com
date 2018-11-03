@@ -1,18 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} | Frederic Marx, Front-End Developer</title>
-    <link rel="icon" href="favicon.png">
-    <link rel="icon" sizes="192x192" href="favicon@192x192.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="favicon@128x128.png">
-    <style>{% include "partials/main.css" %}</style>
+    {% include "partials/head-content.njk" %}
   </head>
   <body>
-    <main>
-      {{ content|safe }}
-    </main>
-    {% include "partials/footer.njk" %}
+    <div class="grid">
+      <main class="gc-main">
+        {{ content|safe }}
+      </main>
+      <div class="gc-main">
+        {% include "partials/footer.njk" %}
+      </div>
+    </div>
   </body>
 </html>

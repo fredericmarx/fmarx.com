@@ -1,6 +1,6 @@
 body {
-  max-width: 30em;
-  padding: 1vw;
+  padding: 2vw;
+  margin: 0;
   font-size: calc(1rem + 0.3vw);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.4;
@@ -34,4 +34,65 @@ a:focus {
 
 .circle {
   border-radius: 50%;
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 1em;
+  grid-template-columns:
+    [full-start main-start wide-start] 1fr
+    [main-end wide-end full-end];
+  max-width: 30rem;
+}
+
+@supports (display: grid) {
+  .grid {
+    max-width: none;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .grid {
+    grid-template-columns:
+      [full-start main-start wide-start] 2fr
+      [main-end wide-end aside-start] 1fr
+      [aside-end full-end];
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .grid {
+    grid-template-columns:
+      [full-start wide-start] 2fr
+      [main-start] 2fr
+      [main-end wide-end aside-start] 1fr
+      [aside-end full-end];
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .grid {
+    grid-template-columns:
+      [full-start wide-start] 2fr
+      [main-start] 2fr
+      [main-end wide-end aside-start] 1fr
+      [aside-end] 1fr
+      [full-end];
+  }
+}
+
+.gc-full {
+  grid-column: full-start / full-end;
+}
+
+.gc-main {
+  grid-column: main-start / main-end;
+}
+
+.gc-wide {
+  grid-column: wide-start / wide-end;
+}
+
+.gc-aside {
+  grid-column: aside-start / aside-end;
 }
