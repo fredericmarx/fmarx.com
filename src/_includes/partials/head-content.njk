@@ -2,6 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% if title %}{{ title }} | {% endif %}Frederic Marx, Front-End Developer</title>
 <link rel="icon" href="favicon.png">
-<link rel="icon" sizes="192x192" href="favicon@192x192.png">
-<link rel="apple-touch-icon" sizes="128x128" href="favicon@128x128.png">
+<link rel="icon" sizes="192x192" href="/favicon@192x192.png">
+<link rel="apple-touch-icon" sizes="128x128" href="/favicon@128x128.png">
+<meta property="og:image" content="/frederic-marx@512x512.jpg">
+<meta name="theme-color" content="#000">
+{% if title %}
+  <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
+{% endif %}
 <style>{% include "partials/main.css" %}</style>
