@@ -5,9 +5,12 @@
   </head>
   <body>
     <main class="main grid prose {% if wideLayout %}prose--wide{% endif%}">
-      <header class="prose__header">
-        {% if title %}<h1 class="fancy-headline">{{ title }}</h1>{% endif %}
-      </header>
+      {% if title %}
+        <header class="prose__header">
+          <h1 class="fancy-headline">{{ title }}</h1>
+          <small>Created: {{ page.date }}</small>
+        </header>
+      {% endif %}
       {{ content|safe }}
       {% if not noBlurb %}
         <aside class="gc-aside gr-blurb">
