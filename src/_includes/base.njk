@@ -8,7 +8,11 @@
       {% if title %}
         <header class="prose__header">
           <h1 class="fancy-headline">{{ title }}</h1>
-          <small>Created: {{ page.date }}</small>
+          <small>
+            <time datetime="{{ page.date }}">
+            {{ page.date|formatDate }}
+            </time>
+          </small>
         </header>
       {% endif %}
       {{ content|safe }}
