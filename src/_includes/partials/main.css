@@ -48,8 +48,23 @@ img {
   margin-top: 1em;
 }
 
-.prose > figure {
+.prose > figure,
+.prose > pre {
   grid-column: wide-start / wide-end;
+}
+
+.prose pre {
+  font-size: 0.85em;
+  padding: 1rem;
+  background-color: #eee;
+  overflow-x: auto;
+}
+
+.prose p > code {
+  font-size: 0.85em;
+  padding: 0.25em;
+  background-color: #eee;
+  border-radius: 0.25em;
 }
 
 .prose figure {
@@ -175,7 +190,7 @@ img {
 
 @media all and (min-width: 600px) {
   .gr-blurb {
-    grid-row-start: 2;
+    grid-row: 2 / span 10;
   }
 }
 
