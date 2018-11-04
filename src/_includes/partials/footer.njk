@@ -1,6 +1,6 @@
 <footer class="main-footer">
   <section>
-    {% if tags and 'til' in tags %}
+    {% if page.url.startsWith('/til/') %}
     <h2>More things I’ve learned</h2>
     {% else %}
     <h2>Things I learned</h2>

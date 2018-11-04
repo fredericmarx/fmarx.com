@@ -1,7 +1,6 @@
 ---
 layout: base
 title: React Portals
-tags: til
 webmentions: true
 ---
 <div>

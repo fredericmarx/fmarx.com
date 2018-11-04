@@ -7,7 +7,12 @@ module.exports = function (eleventyConfig) {
     }
 
     return new Date(date).toLocaleDateString('en-US', options)
-  });
+  })
+
+  eleventyConfig.addCollection('til', function (collection) {
+    const glob = 'src/til/**/*.md'
+    return collection.getFilteredByGlob(glob);
+  })
 
   return {
     dir: {
