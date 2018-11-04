@@ -5,6 +5,7 @@ webmentions: true
 tags: notes
 containsTweets: true
 containsVimeo: true
+wideLayout: true
 ---
 
 *This is sort of a response to Adam “[@mrmrs_](https://twitter.com/mrmrs_)” Morse’s “[Webfonts](http://mrmrs.io/writing/2016/03/17/webfonts/).” It’s not a rebuttal by any means, but rather a collection of my own thoughts that at least tangentially relate to his article.*
