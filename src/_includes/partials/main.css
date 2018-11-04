@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'vespertiny';
+  src: url('/fonts/vespertiny-heavy-webfont.woff2') format('woff2'),
+        url('/fonts/vespertiny-heavy-webfont.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
   padding: 2vw;
   margin: 0;
@@ -169,4 +177,9 @@ img {
   .gr-blurb {
     grid-row-start: 2;
   }
+}
+
+.fancy-headline.fancy-headline {
+  font-family: 'vespertiny', Georgia, serif;
+  font-weight: 900;
 }

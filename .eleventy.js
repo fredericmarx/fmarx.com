@@ -7,7 +7,9 @@ module.exports = {
     'md',
     'njk',
     'png',
-    'jpg'
+    'jpg',
+    'woff',
+    'woff2'
   ],
   passthroughFileCopy: true
 }

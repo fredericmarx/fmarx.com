@@ -6,7 +6,7 @@
   <body>
     <main class="main grid prose {% if wideLayout %}prose--wide{% endif%}">
       <header class="prose__header">
-        {% if title %}<h1>{{ title }}</h1>{% endif %}
+        {% if title %}<h1 class="fancy-headline">{{ title }}</h1>{% endif %}
       </header>
       {{ content|safe }}
       {% if not noBlurb %}
