@@ -2,7 +2,7 @@
 layout: base
 title: Webfonts Last
 webmentions: true
-collection: notes
+tags: notes
 containsTweets: true
 containsVimeo: true
 ---

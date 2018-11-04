@@ -1,5 +1,15 @@
 <footer class="main-footer">
   <section>
+    <h2>Notes</h2>
+    <ul class="list-reset">
+      {%- for note in collections.notes -%}
+        <li>
+          <a href="{{ note.url }}">{{ note.data.title }}</a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  </section>
+  <section>
     <h2>Stay in touch</h2>
     <ul class="list-reset">
       <li><a rel="me" href="https://twitter.com/fredericmarx">Twitter</a></li>
