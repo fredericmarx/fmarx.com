@@ -99,6 +99,15 @@ img {
   }
 }
 
+@media all and (min-width: 500px) {
+  .grid {
+    grid-template-columns:
+      [full-start main-start wide-start aside-start] 5fr
+      [main-end wide-end full-end aside-end]
+      1fr;
+  }
+}
+
 @media all and (min-width: 600px) {
   .grid {
     grid-template-columns:
@@ -121,10 +130,12 @@ img {
 @media all and (min-width: 1400px) {
   .grid {
     grid-template-columns:
+      1fr
       [full-start wide-start] 3fr
       [main-start] 5fr
       [main-end wide-end aside-start] 2fr
-      [aside-end full-end];
+      [aside-end full-end]
+      1fr;
   }
 }
 
