@@ -7,7 +7,7 @@
     <main class="main grid prose {% if wideLayout %}prose--wide{% endif%}">
       {% if title %}
         <header class="prose__header">
-          <h1 class="p-name fancy-headline">{{ title }}</h1>
+          <h1 class="p-name fancy-headline">{{ title|safe }}</h1>
           <small>
             <time class="dt-published" datetime="{{ page.date }}">
             {{ page.date|formatDate }}
@@ -20,9 +20,15 @@
         <aside class="gc-aside gr-blurb">
           <div class="prose">
             <p>
-            <img alt="Frederic Marx" class="u-photo circle" src="/frederic-marx.jpg" srcset="/frederic-marx.jpg 1x, /frederic-marx@2x.jpg 2x" height="60" width="60">
+            <a href="/"><img alt="Frederic Marx" class="u-photo circle" src="/frederic-marx.jpg" height="60" width="60"></a>
             </p>
-            <p>My name is <a class="p-author h-card" href="https://fmarx.com" rel="author">Frederic Marx</a>. I&nbsp;am a front-end developer building websites that support and inspire music makers at <a href="https://www.ableton.com/">Ableton</a> in&nbsp;Berlin.</p>
+            <p>My name is
+            {% if gay.environment == 'gay' %}
+              <a href="https://software.gay" rel="me">
+            {% else %}
+              <a class="p-author h-card" href="https://fmarx.com" rel="author">
+            {% endif %}
+              Frederic Marx</a>. I&nbsp;am a front-end developer building websites that support and inspire music makers at <a href="https://www.ableton.com/">Ableton</a> in&nbsp;Berlin.</p>
           </div>
         </aside>
       {% endif %}

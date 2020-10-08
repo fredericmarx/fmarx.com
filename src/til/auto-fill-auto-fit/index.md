@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Auto-fill or auto-fit?
+title: Auto‑fill or auto‑fit?
 webmentions: true
 date: 2018-11-04
 ---

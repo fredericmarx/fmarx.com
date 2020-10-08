@@ -1,17 +1,57 @@
 @font-face {
-  font-family: 'vespertiny';
-  src: url('/fonts/vespertiny-heavy-webfont.woff2') format('woff2'),
-        url('/fonts/vespertiny-heavy-webfont.woff') format('woff');
-  font-weight: 900;
+  font-family: "Tundra";
+  src: url("/fonts/1468561/3f555465-0496-406b-906c-a6acb1992a66.woff2") format("woff2"),
+    url("/fonts/1468561/d161abb5-da97-4ac0-94b1-8f9f26efc10e.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Tundra";
+  src: url("/fonts/1468541/a7dbff3b-a233-4616-b19d-9a0eb2f90ff8.woff2") format("woff2"),
+    url("/fonts/1468541/755d5ff0-c265-4d23-bad6-5f7781ee45b4.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+:root {
+  --space-1: clamp(1rem, 5vw, 3rem);
+  --pink: #D60270;
+  --purple: #9B4F96;
+  --light-purple: #c852c0;
+  --teal: #69FFED;
+  --blue: #0038A8;
+  --beige: #FFEEAB;
+  --gaydient: linear-gradient(to right, var(--pink), var(--blue));
+  --bg-html: #ec8104;
+  --bg-body: #161c1b;
+  --bg-code:#2c3836;
+  --cl-text: #faf2e9;
+  --cl-code: var(--cl-text);
+  --cl-link: var(--teal);
+  --cl-link-underline: var(--light-purple);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-html);
+}
+
 body {
-  padding: 2vw;
+  padding: var(--space-1);
   margin: 0;
   font-size: calc(1rem + 0.3vw);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.45;
+  min-height: 100vh;
+  background-color: var(--bg-body);
+  color: var(--cl-text);
+  font-weight: 400;
 }
 
 h2 {
@@ -20,13 +60,13 @@ h2 {
 }
 
 a {
-  color: blue;
-  text-decoration-color: plum;
+  color: var(--cl-link);
+  text-decoration-color: var(--cl-link-underline);
 }
 
 a:hover,
 a:focus {
-  text-decoration-color: purple;
+  text-decoration-color: var(--cl-link);
 }
 
 img {
@@ -56,14 +96,16 @@ img {
 .prose pre {
   font-size: 0.85em;
   padding: 1rem;
-  background-color: #eee;
+  color: var(--cl-code);
+  background-color: var(--bg-code);
   overflow-x: auto;
 }
 
 .prose p > code {
   font-size: 0.85em;
   padding: 0.25em;
-  background-color: #eee;
+  color: var(--cl-code);
+  background-color: var(--bg-code);
   border-radius: 0.25em;
 }
 
@@ -106,6 +148,7 @@ img {
 
 .link-reset:not(:focus) {
   color: inherit;
+  background: none;
   text-decoration: none;
 }
 
@@ -115,7 +158,7 @@ img {
 
 .grid {
   display: grid;
-  grid-column-gap: 1em;
+  grid-column-gap: var(--space-1);
   grid-template-columns:
     [full-start main-start wide-start aside-start] 1fr
     [main-end wide-end full-end aside-end];
@@ -136,27 +179,18 @@ img {
   .grid {
     grid-template-columns:
       [full-start main-start wide-start aside-start] 5fr
-      [main-end wide-end full-end aside-end]
-      1fr;
-  }
-}
-
-@media all and (min-width: 600px) {
-  .grid {
-    grid-template-columns:
-      [full-start main-start wide-start] 2fr
-      [main-end wide-end aside-start] 1fr
-      [aside-end full-end];
+      [main-end aside-end]
+      1fr [wide-end full-end];
   }
 }
 
 @media all and (min-width: 1000px) {
   .grid {
     grid-template-columns:
-      [full-start wide-start] 1fr
-      [main-start] 4fr
-      [main-end wide-end aside-start] 2fr
-      [aside-end full-end];
+      [full-start aside-start] 2fr
+      [aside-end wide-start main-start] 4fr
+      [main-end] 1fr
+      [wide-end full-end];
   }
 }
 
@@ -164,37 +198,39 @@ img {
   .grid {
     grid-template-columns:
       1fr
-      [full-start wide-start] 3fr
-      [main-start] 5fr
-      [main-end wide-end aside-start] 2fr
-      [aside-end full-end]
+      [full-start aside-start] 2fr
+      [aside-end wide-start main-start] 5fr
+      [main-end] 3fr
+      [wide-end full-end]
       1fr;
   }
 }
 
 .gc-full {
-  grid-column: full-start / full-end;
+  grid-column: full;
 }
 
 .gc-main {
-  grid-column: main-start / main-end;
+  grid-column: main;
 }
 
 .gc-wide {
-  grid-column: wide-start / wide-end;
+  grid-column: wide;
 }
 
 .gc-aside {
-  grid-column: aside-start / aside-end;
+  grid-column: aside;
 }
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 1000px) {
   .gr-blurb {
-    grid-row: 2 / span 10;
+    grid-row: 2 / span 9999;
   }
 }
 
 .fancy-headline.fancy-headline {
-  font-family: 'vespertiny', Georgia, serif;
-  font-weight: 900;
+  font-family: "Tundra", Georgia, serif;
+  font-weight: normal;
+  font-size: 3em;
+  line-height: 1.2;
 }

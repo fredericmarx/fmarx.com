@@ -1,0 +1,34 @@
+:root {
+  --bg-html: var(--purple);
+  --bg-code: var(--purple);
+  --cl-code: white;
+  --bg-body: #eeeeee;
+  --cl-text: #000;
+}
+
+body {
+  background-image: var(--gaydient);
+  background-size: 100% 6px;
+  background-repeat: no-repeat;
+}
+
+a {
+  background-image: var(--gaydient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration-color: #9B4F96;
+}
+
+a:hover,
+a:focus {
+  color: #0038A8;
+  text-decoration-color: #D60270;
+}
+
+.fancy-headline.fancy-headline {
+  background-image: var(--gaydient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

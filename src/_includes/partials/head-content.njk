@@ -1,13 +1,30 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% if title %}{{ title }} | {% endif %}Frederic Marx, Front-End Developer</title>
-<link rel="icon" href="favicon.png">
-<link rel="icon" sizes="192x192" href="/favicon@192x192.png">
-<link rel="apple-touch-icon" sizes="128x128" href="/favicon@128x128.png">
-<meta property="og:image" content="/frederic-marx@512x512.jpg">
-<meta name="theme-color" content="#000">
-{% if title %}
-  <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
+
+{% if gay.environment == 'gay' %}
+  <title>{% if title %}{{ title }} ✨ {% endif %}Frederic Marx, Front-End Developer 🦄 </title>
+  <link rel="icon" href="favicon.png">
+  <link rel="icon" sizes="192x192" href="/favicon@192x192.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="/favicon@128x128.png">
+  <link rel="canonical" href="https://fmarx.com{{ page.url }}" />
+{% else %}
+  <title>{% if title %}{{ title }} | {% endif %}Frederic Marx, Front-End Developer</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="icon" sizes="192x192" href="/favicon@192x192.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="/favicon@128x128.png">
+  <link rel="rainbow-connection" href="https://software.gay{{ page.url }}" />
+  <link rel="me" href="https://software.gay" />
+
+  {% if title %}
+    <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
+  {% endif %}
 {% endif %}
-<style>{% include "partials/main.css" %}</style>
-<link rel="preload" href="/fonts/vespertiny-heavy-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<meta property="og:image" content="https://fmarx.com/frederic-marx@1200x1200.jpg">
+<meta name="theme-color" content="#000">
+<style>
+  {% include "partials/main.css" %}
+  {% if gay.environment == 'gay' %}
+    {% include "partials/gay.css" %}
+  {% endif %}
+</style>
+<link rel="preload" href="/fonts/1468561/3f555465-0496-406b-906c-a6acb1992a66.woff2" as="font" type="font/woff2" crossorigin="anonymous">
