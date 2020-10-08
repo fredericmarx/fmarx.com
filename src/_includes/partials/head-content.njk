@@ -9,5 +9,10 @@
 {% if title %}
   <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention">
 {% endif %}
-<style>{% include "partials/main.css" %}</style>
+<style>
+  {% include "partials/main.css" %}
+  {% if gay.environment == 'gay' %}
+    {% include "partials/gay.css" %}
+  {% endif %}
+</style>
 <link rel="preload" href="/fonts/vespertiny-heavy-webfont.woff2" as="font" type="font/woff2" crossorigin="anonymous">

@@ -1,0 +1,18 @@
+:root {
+  --gaydient: linear-gradient(to right, #D60270, #0038A8);
+}
+
+body {
+  background-image: var(--gaydient);
+  background-size: 100% 4px;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #D60270;
+}
+
+a {
+  background-image: var(--gaydient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

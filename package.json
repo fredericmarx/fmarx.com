@@ -1,9 +1,9 @@
 {
-  "name": "fmarx.com",
-  "description": "The personal website of Frederic Marx",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.5.4"
+	"name": "fmarx.com",
+	"description": "The personal website of Frederic Marx",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.5.4"
 	},
 	"scripts": {
 		"eleventy": "eleventy",
@@ -11,6 +11,7 @@
 		"build": "npm run clean && npm run eleventy",
 		"watch": "npm run build && npx eleventy --watch",
 		"serve": "npm run build && npx eleventy --serve",
+		"gay": "ELEVENTY_ENV=gay npm run serve",
 		"start": "npm run serve"
 	}
 }
