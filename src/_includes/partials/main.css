@@ -232,8 +232,13 @@ img {
   grid-column: aside;
 }
 
+.gr-blurb {
+  margin-top: 2em;
+}
+
 @media all and (min-width: 1000px) {
   .gr-blurb {
+    margin-top: 1em;
     grid-row: 2 / span 9999;
   }
 }
