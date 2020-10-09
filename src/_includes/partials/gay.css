@@ -14,6 +14,7 @@ body {
 
 a {
   background-image: var(--gaydient);
+  -webkit-box-decoration-break: clone;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -28,6 +29,7 @@ a:focus {
 
 .fancy-headline.fancy-headline {
   background-image: var(--gaydient);
+  -webkit-box-decoration-break: clone;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
