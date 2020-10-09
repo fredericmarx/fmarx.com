@@ -1,6 +1,6 @@
 :root {
   --bg-html: var(--purple);
-  --bg-code: var(--purple);
+  --bg-code: var(--dark-purple);
   --cl-code: white;
   --bg-body: #eeeeee;
   --cl-text: #000;
