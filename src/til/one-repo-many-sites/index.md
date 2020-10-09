@@ -8,9 +8,9 @@ date: 2020-10-09
 
 Two days ago, I learned through an ad that the _.gay_ top-level domain is now widely available.
 
-Against my better judgement, I went to the website of my domain provider and, who would have thought; [software.gay](software.gay) was still available.
+Against my better judgement, I went to the website of my domain provider and, who would have thought; [software.gay](https://software.gay) was still available.
 
-My initial idea was to just redirect it to [my site](fmarx.com), but after I shared the good news on Twitter, I was encouraged to take it one step further:
+My initial idea was to just redirect it to [my site](https://fmarx.com), but after I shared the good news on Twitter, I was encouraged to take it one step further:
 
 <div>
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Please please please make a reference to this glorious domain name in your meta title or meta description.</p>&mdash; Myriam (@myriamjessier) <a href="https://twitter.com/myriamjessier/status/1314176196121440256?ref_src=twsrc%5Etfw">October 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
