@@ -234,6 +234,7 @@ img {
 
 .gr-blurb {
   margin-top: 2em;
+  max-width: 16em;
 }
 
 @media all and (min-width: 1000px) {
@@ -248,4 +249,9 @@ img {
   font-weight: normal;
   font-size: 3em;
   line-height: 1.2;
+  font-variant-numeric: oldstyle-nums;
+}
+
+.xxl-text.xxl-text {
+  font-size: 5em;
 }
