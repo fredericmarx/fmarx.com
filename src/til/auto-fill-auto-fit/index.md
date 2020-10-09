@@ -4,7 +4,7 @@ title: Auto‑fill or auto‑fit?
 webmentions: true
 date: 2018-11-04
 ---
-One of my favorite snipptes of CSS Grid is the following one:
+One of my favorite snippets of CSS Grid is the following one:
 
 ```
 .grid {
