@@ -157,6 +157,15 @@ img {
   border-radius: 50%;
 }
 
+.avatar {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.avatar img {
+  display: block;
+}
+
 .grid {
   display: grid;
   grid-column-gap: var(--space-1);
