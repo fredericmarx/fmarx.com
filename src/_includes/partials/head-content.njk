@@ -33,10 +33,16 @@
 <meta property="og:image" content="https://fmarx.com/frederic-marx@1200x1200.jpg">
 
 <meta name="theme-color" content="#000">
-<style>
+
+{% set css %}
   {% include "partials/main.css" %}
   {% if gay.environment == 'gay' %}
     {% include "partials/gay.css" %}
   {% endif %}
+{% endset %}
+
+<style>
+  {{ css | cssmin | safe }}
 </style>
+
 <link rel="preload" href="/fonts/1468561/3f555465-0496-406b-906c-a6acb1992a66.woff2" as="font" type="font/woff2" crossorigin="anonymous">
