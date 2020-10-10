@@ -39,6 +39,10 @@ a:focus {
   position: relative;
 }
 
+.avatar img {
+  filter: brightness(110%);
+}
+
 .avatar::before {
   background-color: var(--pink);
   content: '';
