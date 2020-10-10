@@ -1,4 +1,5 @@
 const CleanCSS = require("clean-css");
+const htmlmin = require("html-minifier");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksFilter("formatDate", (date) => {
@@ -18,6 +19,19 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("til", function (collection) {
     const glob = "src/til/**/*.md";
     return collection.getFilteredByGlob(glob);
+  });
+
+  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+    if( outputPath.endsWith(".html") ) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true
+      });
+      return minified;
+    }
+
+    return content;
   });
 
   return {

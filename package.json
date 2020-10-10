@@ -4,7 +4,8 @@
 	"license": "ISC",
 	"devDependencies": {
 		"@11ty/eleventy": "^0.5.4",
-		"clean-css": "^4.2.3"
+		"clean-css": "^4.2.3",
+		"html-minifier": "^4.0.0"
 	},
 	"scripts": {
 		"eleventy": "eleventy",
