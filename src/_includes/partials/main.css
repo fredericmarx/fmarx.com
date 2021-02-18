@@ -243,9 +243,10 @@ img {
 @media all and (min-width: 1000px) {
   .grid {
     grid-template-columns:
-      [full-start aside-start] 2fr
-      [aside-end wide-start main-start] 4fr
-      [main-end] 1fr
+      [full-start aside-start] 6fr
+      [aside-end wide-start] 1fr
+      [main-start] 14fr
+      [main-end] 3fr
       [wide-end full-end];
   }
 }
@@ -254,8 +255,9 @@ img {
   .grid {
     grid-template-columns:
       1fr
-      [full-start aside-start] 2fr
-      [aside-end wide-start main-start] 5fr
+      [full-start aside-start] 4fr
+      [aside-end wide-start] 1fr
+      [main-start] 10fr
       [main-end] 3fr
       [wide-end full-end]
       1fr;
