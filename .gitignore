@@ -17,3 +17,5 @@ node_modules
 
 # Generated output
 dist
+
+.DS_Store

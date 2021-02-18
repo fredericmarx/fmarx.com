@@ -8,12 +8,12 @@
       {% if title %}
         <header class="prose__header">
           <h1 class="p-name fancy-headline">{{ title|safe }}</h1>
-          <small>
-            <time class="dt-published" datetime="{{ page.date }}">
-            {{ page.date|formatDate }}
-            </time>
-          </small>
         </header>
+        <small>
+          <time class="dt-published" datetime="{{ page.date }}">
+          {{ page.date|formatDate }}
+          </time>
+        </small>
       {% endif %}
       {{ content|safe }}
       {% if not noBlurb %}
