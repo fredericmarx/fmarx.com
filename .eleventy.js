@@ -16,8 +16,8 @@ module.exports = function (eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
-  eleventyConfig.addCollection("til", function (collection) {
-    const glob = "src/til/**/*.md";
+  eleventyConfig.addCollection("journal", function (collection) {
+    const glob = "src/{journal,til}/**/*.md";
     return collection.getFilteredByGlob(glob);
   });
 
