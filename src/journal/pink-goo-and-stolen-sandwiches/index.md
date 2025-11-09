@@ -1,10 +1,9 @@
 ---
 layout: base
 title: Pink goo and stolen sandwiches
+description: The rudeness of ignoring the hidden labor costs of generative AI
 webmentions: true
 date: 2025-11-09
-tags: notes
-wideLayout: true
 ---
 
 Under global capitalism, work doesn’t just magically disappear. It only gets transformed, shifted around, and obscured – even from the workers themselves – through layers upon layers of commodification and alienation.
