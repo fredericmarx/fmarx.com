@@ -1,19 +1,22 @@
 {
-	"name": "fmarx.com",
-	"description": "The personal website of Frederic Marx",
-	"license": "ISC",
-	"devDependencies": {
-		"@11ty/eleventy": "^1.0.1",
-		"clean-css": "^5.3.1",
-		"html-minifier": "^4.0.0"
-	},
-	"scripts": {
-		"eleventy": "eleventy",
-		"clean": "rm -rf -- dist",
-		"build": "npm run clean && npm run eleventy",
-		"watch": "npm run build && npx eleventy --watch",
-		"serve": "npm run build && npx eleventy --serve",
-		"gay": "ELEVENTY_ENV=gay npm run serve",
-		"start": "npm run serve"
-	}
+  "name": "fmarx.com",
+  "description": "The personal website of Frederic Marx",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "clean-css": "^5.3.1",
+    "html-minifier": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "eleventy": "eleventy",
+    "clean": "rm -rf -- dist",
+    "build": "npm run clean && npm run eleventy",
+    "watch": "npm run build && npx eleventy --watch",
+    "serve": "npm run build && npx eleventy --serve",
+    "gay": "ELEVENTY_ENV=gay npm run serve",
+    "start": "npm run serve"
+  }
 }
