@@ -102,6 +102,10 @@ h2 {
   font-weight: 600;
 }
 
+.prose h2 {
+  margin-top: 2em;
+}
+
 a {
   color: var(--cl-link);
   text-decoration-color: var(--cl-link-underline);
@@ -169,13 +173,18 @@ img {
 }
 
 .prose blockquote {
-  margin: 0;
+  margin-left: 0;
   font-style: italic;
-}
-
-.prose blockquote > * {
   padding-left: 1em;
   border-left: 2px solid plum;
+}
+
+.prose blockquote > *:first-child {
+  margin-top: 0;
+}
+
+.prose blockquote > *:last-child {
+  margin-bottom: 0;
 }
 
 .prose__header h1 {
