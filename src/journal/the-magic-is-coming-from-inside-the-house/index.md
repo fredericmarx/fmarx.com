@@ -94,7 +94,7 @@ When a tech oligarch has an idea, but it turns out the idea would be bad for hum
 
 I think we could all save ourselves a lot of trouble by not allowing them to do the bad thing in the first place, but that’s more of a long-term project. In the meantime, what if we take everything that generative AI asks of us, and do the exact opposite?
 
-Value deliberate process over automatic results, [shared reality over hyperpersonalisation](https://bsky.app/profile/anthonymoser.com/post/3m6cefchy3k2z). Context over content. Constructive disagreement over [sycophancy](https://c3.unu.edu/blog/how-sycophancy-shapes-the-reliability-of-large-language-models). Sources over summaries.
+Value deliberate process over automatic results, [shared reality over hyperpersonalisation](https://bsky.app/profile/anthonymoser.com/post/3m6cefchy3k2z). Context over content. Sources over summaries. Constructive disagreement over saccharine [sycophancy](https://c3.unu.edu/blog/how-sycophancy-shapes-the-reliability-of-large-language-models).
 
 Invest in relationships with humans, not machines. Ask questions without expecting an answer. Care for something. Care for someone. Love something. [Hate something](https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html). Practice saying no. Practice accepting a no. Don’t settle for “good enough”. Move slow and mend things. [Embrace friction](https://phirephoenix.com/blog/2025-10-11/friction).
 
