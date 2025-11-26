@@ -58,7 +58,7 @@ A glitch like this “[foregrounds the medium, unveiling the limitations of the 
 
 In many ways, understanding how things work is the antithesis of generative AI.
 
-## Had an idea, called it a day
+## Had one idea, called it a day
 
 > AI won't replace you.<br>An executive who doesn't understand AI or your job will.
 >
