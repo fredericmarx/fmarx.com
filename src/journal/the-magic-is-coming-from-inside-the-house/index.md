@@ -3,7 +3,7 @@ layout: base
 title: The magic is coming from inside the house
 description: What if we take everything that generative AI asks of us, and do the exact opposite?
 webmentions: true
-date: 2025-11-24
+date: 2025-11-26
 ---
 
 > Once a particular program is unmasked, once it’s inner workings are explained in language sufficiently plain to induce understanding, its magic crumbles away.
