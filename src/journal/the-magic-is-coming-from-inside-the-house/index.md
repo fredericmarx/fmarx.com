@@ -92,7 +92,7 @@ One core tenet of being a tech oligarch is the inability to take no for an answe
 
 When a tech oligarch has an idea, but it turns out the idea would be bad for humanity, they’re still gonna do it, and then they will do five other things to try and “mitigate the risks” (or at least that’s what they’ll claim).
 
-I think we could all save ourselves a lot of trouble by not allowing them to do the bad thing in the first place, but that’s more of a long-term project. In the meantime, what if we take everything that generative AI asks of us, and do the exact opposite.
+I think we could all save ourselves a lot of trouble by not allowing them to do the bad thing in the first place, but that’s more of a long-term project. In the meantime, what if we take everything that generative AI asks of us, and do the exact opposite?
 
 Value deliberate process over automatic results, [shared reality over hyperpersonalisation](https://bsky.app/profile/anthonymoser.com/post/3m6cefchy3k2z). Context over content. Constructive disagreement over [sycophancy](https://c3.unu.edu/blog/how-sycophancy-shapes-the-reliability-of-large-language-models). Sources over summaries.
 
