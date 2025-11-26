@@ -96,6 +96,6 @@ I think we could all save ourselves a lot of trouble by not allowing them to do 
 
 Value deliberate process over automatic results, [shared reality over hyperpersonalization](https://bsky.app/profile/anthonymoser.com/post/3m6cefchy3k2z). Context over content. Sources over summaries. Constructive disagreement over saccharine [sycophancy](https://c3.unu.edu/blog/how-sycophancy-shapes-the-reliability-of-large-language-models).
 
-Invest in relationships with humans, not machines. Ask questions without expecting an answer. Care for something. Care for someone. Love something. [Hate something](https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html). Practice saying no. Practice accepting a no. Don’t settle for “good enough”. Move slow and mend things. [Embrace friction](https://phirephoenix.com/blog/2025-10-11/friction).
+Invest in relationships with humans, not machines. Ask questions without expecting an answer. Care about something. Care for someone. Love something. [Hate something](https://anthonymoser.github.io/writing/ai/haterdom/2025/08/26/i-am-an-ai-hater.html). Practice saying no. Practice accepting a no. Don’t settle for “good enough”. Move slow and mend things. [Embrace friction](https://phirephoenix.com/blog/2025-10-11/friction).
 
 The post-bubble-era is coming; don’t miss out!
